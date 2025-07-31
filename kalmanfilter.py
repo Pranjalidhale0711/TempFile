@@ -44,9 +44,7 @@ def example():
 	kf = KalmanFilter(F = F, H = H, Q = Q, R = R)
 	predictions = []
 
-	for z in measurements:
-		predictions.append(np.dot(H,  kf.predict())[0])
-		kf.update(z)
+
 
 
 
