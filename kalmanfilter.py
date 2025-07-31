@@ -48,9 +48,5 @@ def example():
 		predictions.append(np.dot(H,  kf.predict())[0])
 		kf.update(z)
 
-	import matplotlib.pyplot as plt
-	plt.plot(range(len(measurements)), measurements, label = 'Measurements')
-	plt.plot(range(len(predictions)), np.array(predictions), label = 'Kalman Filter Prediction')
-	plt.legend()
-	plt.show()
+
 
