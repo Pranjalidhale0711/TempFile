@@ -5,7 +5,7 @@ class KalmanFilter(object):
 
         
 
-        self.n = F.shape[1]
+        self.nppp = F.shape[1]
         self.m = H.shape[1]
 
         self.F = F
