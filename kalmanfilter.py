@@ -41,7 +41,7 @@ def example():
 	x = np.linspace(-10, 10, 100)
 	measurements = - (x**2 + 2*x - 2)  + np.random.normal(0, 2, 100)
 
-	kf = KalmanFilter(F = F, H = H, Q = Q, R = R)
+
 	predictions = []
 
 lklklklklklkkklklkl
